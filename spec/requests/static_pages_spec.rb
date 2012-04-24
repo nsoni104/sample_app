@@ -21,7 +21,7 @@ describe "StaticPages" do
       let(:user) { FactoryGirl.create(:user) }
       before do
         FactoryGirl.create(:micropost, user: user, content: "What up")
-        FactoryGirl.create(:micropost, user: user, content: "Hola")
+        FactoryGirl.create(:micropost, user: user, content: "Holla")
         sign_in user
         visit root_path
       end
